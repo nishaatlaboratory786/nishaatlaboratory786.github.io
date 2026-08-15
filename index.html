@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nishaat Collection Centre - convenient home sample collection service across Ahmedabad. Customized body profiles and WhatsApp booking.">
+<meta name="theme-color" content="#0b7a75">
+<title>Nishaat Collection Centre | Home Sample Collection Ahmedabad</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#087c76;--dark:#12343b;--mint:#eaf9f6;--gold:#e7b75a;--white:#fff;--muted:#64777c}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#f7fbfa;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid #e5eeee;backdrop-filter:blur(8px)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.brand img{width:52px;height:52px;object-fit:contain;border-radius:12px}
+.brand span{font-size:19px}
+nav{display:flex;gap:22px;font-size:14px;font-weight:700}
+.navbtn{background:var(--teal);color:white;padding:11px 16px;border-radius:999px}
+.hero{padding:72px 0 58px;background:linear-gradient(135deg,#eaf9f6 0%,#fff 58%,#f8f2e5 100%);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:50px}
+.badge{display:inline-block;background:#d8f1ed;color:var(--teal);font-weight:800;padding:8px 13px;border-radius:999px;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.02;letter-spacing:-2px;margin-bottom:20px}
+h1 span{color:var(--teal)}
+.hero p{font-size:18px;color:#50666b;max-width:650px;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 20px;border-radius:12px;font-weight:800;border:1px solid #d7e6e4}
+.primary{background:var(--teal);color:white;border-color:var(--teal)}
+.secondary{background:white}
+.hero-card{background:white;border-radius:28px;padding:28px;box-shadow:0 20px 60px rgba(20,70,70,.12);border:1px solid #e2eeee}
+.logo-big{height:115px;width:115px;object-fit:contain;display:block;margin:0 auto 18px}
+.hero-card h3{text-align:center;font-size:24px;margin-bottom:8px}
+.hero-card p{text-align:center;color:var(--muted)}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}
+.quick div{background:#f5faf9;border-radius:14px;padding:14px;text-align:center;font-size:13px;font-weight:700}
+section{padding:70px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+.section-head h2{font-size:36px;margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #e3eeee;border-radius:20px;padding:25px;box-shadow:0 8px 28px rgba(25,70,70,.05)}
+.icon{font-size:32px;margin-bottom:12px}
+.card h3{margin-bottom:8px;font-size:20px}
+.card p{color:var(--muted);font-size:14px}
+.profile{background:var(--dark);color:white}
+.profile .section-head p{color:#c5d3d5}
+.profile-box{background:linear-gradient(135deg,#0d8c84,#075e63);border-radius:28px;padding:35px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.profile-box h3{font-size:32px;margin-bottom:12px}
+.profile-box p{color:#e1f2f0}
+.profile-list{display:grid;gap:12px}
+.profile-list div{background:rgba(255,255,255,.1);padding:13px 16px;border-radius:12px}
+.area{background:#fff}
+.area-box{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.area-box span{padding:12px 18px;background:var(--mint);color:var(--teal);font-weight:800;border-radius:999px}
+.note{text-align:center;margin-top:20px;color:var(--muted)}
+.cta{background:linear-gradient(135deg,#eaf9f6,#fff7e7)}
+.cta-box{display:flex;align-items:center;justify-content:space-between;gap:25px}
+.cta h2{font-size:34px;margin-bottom:8px}
+.cta p{color:var(--muted)}
+footer{background:#102f35;color:#dce9e9;padding:40px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer h3{color:white;margin-bottom:8px}
+.small{font-size:13px;color:#a9c0c2}
+@media(max-width:800px){
+nav{display:none}.hero{padding-top:45px}.hero-grid,.profile-box{grid-template-columns:1fr}.grid3{grid-template-columns:1fr}.quick{grid-template-columns:1fr}section{padding:55px 0}.cta-box{flex-direction:column;align-items:flex-start}h1{letter-spacing:-1px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#home"><img src="logo.png" alt="Nishaat Collection Centre logo"><span>Nishaat Collection Centre</span></a>
+<nav><a href="#services">Services</a><a href="#profiles">Profiles</a><a href="#areas">Service Areas</a><a class="navbtn" href="https://wa.me/919662256528?text=Hello%20Nishaat%20Collection%20Centre%2C%20I%20want%20to%20know%20the%20price%20for%20a%20test%2Fprofile.">Get Price on WhatsApp</a></nav>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge">HOME SAMPLE COLLECTION • AHMEDABAD</div>
+<h1>Healthcare made <span>simple & convenient.</span></h1>
+<p>Nishaat Collection Centre provides convenient home sample collection across Ahmedabad. Choose the tests you need or ask us to customize a body profile according to your requirements.</p>
+<div class="actions">
+<a class="btn primary" href="https://wa.me/919662256528?text=Hello%20Nishaat%20Collection%20Centre%2C%20I%20want%20to%20book%20a%20home%20sample%20collection.">📲 Book on WhatsApp</a>
+<a class="btn secondary" href="https://wa.me/919662256528?text=Hello%20Nishaat%20Collection%20Centre%2C%20please%20share%20the%20price%20for%20my%20required%20tests.">💬 Get Price</a>
+</div>
+</div>
+<div class="hero-card">
+<img class="logo-big" src="logo.png" alt="Nishaat Collection Centre">
+<h3>Nishaat Collection Centre</h3>
+<p>Professional & convenient sample collection at your doorstep.</p>
+<div class="quick"><div>🏠 Home Collection</div><div>🧪 Blood Tests</div><div>📱 Easy Booking</div></div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="section-head"><h2>Our Services</h2><p>Simple, convenient and designed around your requirements.</p></div>
+<div class="grid3">
+<div class="card"><div class="icon">🏠</div><h3>Home Sample Collection</h3><p>Book a convenient sample collection visit at your home anywhere across Ahmedabad.</p></div>
+<div class="card"><div class="icon">🧪</div><h3>Blood Testing</h3><p>Ask us about the tests you need and get the price directly on WhatsApp.</p></div>
+<div class="card"><div class="icon">🩺</div><h3>Customized Profiles</h3><p>We customize a body profile according to your requirements and testing needs.</p></div>
+</div>
+</div>
+</section>
+
+<section id="profiles" class="profile">
+<div class="container">
+<div class="section-head"><h2>Customized Body Profile</h2><p>Don't know which tests you need? Tell us your requirements and we'll help you choose a suitable profile.</p></div>
+<div class="profile-box">
+<div><h3>We customize a body profile for your requirement.</h3><p>Share your age, requirements or the tests recommended by your doctor. Contact us on WhatsApp for details and pricing.</p><div class="actions" style="margin-top:20px"><a class="btn" style="background:white;color:#075e63;border:0" href="https://wa.me/919662256528?text=Hello%20Nishaat%20Collection%20Centre%2C%20I%20want%20a%20customized%20body%20profile.%20Please%20guide%20me.">Get Details on WhatsApp</a></div></div>
+<div class="profile-list"><div>✓ Personalized test selection</div><div>✓ Price shared on WhatsApp</div><div>✓ Convenient home sample collection</div><div>✓ Service available across Ahmedabad</div></div>
+</div>
+</div>
+</section>
+
+<section id="areas" class="area">
+<div class="container">
+<div class="section-head"><h2>Home Collection Across Ahmedabad</h2><p>We provide service across Ahmedabad. Visiting charges may apply depending on the location.</p></div>
+<div class="area-box"><span>Areya</span><span>Odhav</span><span>Nikol</span><span>Naroda</span><span>Vastral</span><span>All Ahmedabad</span></div>
+<p class="note">For your exact location and visiting charge, message us on WhatsApp.</p>
+</div>
+</section>
+
+<section class="cta">
+<div class="container cta-box">
+<div><h2>Need a test price?</h2><p>Send us the test name or your requirements and get the price on WhatsApp.</p></div>
+<a class="btn primary" href="https://wa.me/919662256528?text=Hello%20Nishaat%20Collection%20Centre%2C%20I%20want%20to%20know%20the%20price%20for%20my%20required%20test%2Fprofile.">📲 Get Price on WhatsApp</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer-grid">
+<div><h3>Nishaat Collection Centre</h3><p class="small">Home sample collection service across Ahmedabad.</p></div>
+<div><h3>Contact</h3><p>📞 9662256528</p><p class="small">WhatsApp booking available</p></div>
+<div><h3>Quick Message</h3><p class="small">DM for more details.</p></div>
+</div>
+</footer>
+</body>
+</html>
